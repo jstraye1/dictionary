@@ -12,7 +12,16 @@ export default function App() {
           <Dictionary />
         </main>
         <footer>
-          <p>Open-Source Code by Jen Strayer</p>
+          <p>
+            <a
+              href="https://github.com/jstraye1/dictionary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open-Source Code
+            </a>{" "}
+            by Jen Strayer
+          </p>
         </footer>
       </div>
     </div>
