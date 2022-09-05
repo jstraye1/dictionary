@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./Dictionary.css";
 
 export default function Dictionary() {
@@ -8,9 +9,16 @@ export default function Dictionary() {
     setKeyword(event.target.value);
   }
 
+  function handleResponse(response) {
+    console.log(response.data[0]);
+  }
+
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}`);
+
+    // documentation https://dictionaryapi.dev/
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   return (
@@ -18,7 +26,7 @@ export default function Dictionary() {
       <h2>What word would you like to look up?</h2>
       <form onSubmit={search}>
         <input type="search" autoFocus={true} onChange={handleKeywordChange} />
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-primary">
           Search
         </button>
       </form>
