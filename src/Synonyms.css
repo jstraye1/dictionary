@@ -1,0 +1,11 @@
+.Synonyms li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  background: #e1e1e1;
+  padding: 8px 5px;
+  line-height: 1;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
