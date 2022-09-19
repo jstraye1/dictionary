@@ -3,7 +3,7 @@ import ReactAudioPlayer from "react-audio-player";
 import "./Phonetics.css";
 
 export default function Phonetics(props) {
-  if (props.phonetic.audio) {
+  if (props.phonetic.audio && props.phonetic.text) {
     return (
       <div className="Phonetics">
         <h4>
@@ -18,6 +18,12 @@ export default function Phonetics(props) {
       </div>
     );
   } else {
-    return <h4>{props.phonetic.text}</h4>;
+    return (
+      <div className="Phonetics">
+        <h4>
+          <span className="phonetic-text">{props.phonetic.text}</span>
+        </h4>
+      </div>
+    );
   }
 }

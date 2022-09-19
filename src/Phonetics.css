@@ -1,9 +1,12 @@
 .Phonetics h4 {
-  margin-right: 20px;
   display: inline;
+}
+
+.Phonetics h4 .phonetic-text {
+  margin-right: 20px;
   margin-top: 20px;
   opacity: 0.8;
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .Phonetics .phonetic-audio {

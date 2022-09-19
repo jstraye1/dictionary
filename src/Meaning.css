@@ -1,10 +1,12 @@
 .Meaning .definition {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 0px;
 }
 
 .Meaning em {
+  display: block;
   margin-left: 30px;
+  margin-top: 10px;
   color: #666;
 }
 

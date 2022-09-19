@@ -14,8 +14,6 @@ export default function Meaning(props) {
               <span key={index}>
                 <p className="definition">
                   {index + 1}. {definition.definition}
-                </p>
-                <p>
                   <em>{definition.example}</em>
                 </p>
                 <Synonyms synonyms={definition.synonyms} />

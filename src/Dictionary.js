@@ -17,12 +17,19 @@ export default function Dictionary() {
     setResults(response.data[0]);
   }
 
+  function error() {
+    alert(
+      "We do not have a definition for this word. Please check your spelling or search another word."
+    );
+  }
+
   function search(event) {
     event.preventDefault();
+    event.target.reset();
 
     // documentation https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleResponse).catch(error);
   }
 
   return (
