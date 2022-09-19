@@ -17,6 +17,8 @@ export default function Phonetics(props) {
         />
       </div>
     );
+  } else if (props.phonetic.audio) {
+    return null;
   } else {
     return (
       <div className="Phonetics">
