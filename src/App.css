@@ -1,9 +1,6 @@
 .App {
-  background: radial-gradient(
-    circle at 50.4% 50.5%,
-    rgb(206, 18, 18) 0%,
-    rgb(122, 21, 21) 90%
-  );
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .App-header {
