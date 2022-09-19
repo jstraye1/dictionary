@@ -20,9 +20,11 @@ export default function Phonetics(props) {
   } else {
     return (
       <div className="Phonetics">
-        <h4>
-          <span className="phonetic-text">{props.phonetic.text}</span>
-        </h4>
+        <div className="row mt-2">
+          <h4>
+            <span className="phonetic-text">{props.phonetic.text}</span>
+          </h4>
+        </div>
       </div>
     );
   }
